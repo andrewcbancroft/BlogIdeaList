@@ -9,23 +9,30 @@
 /* Begin PBXBuildFile section */
 		CE95EDC922AA6AC40020BCAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDC822AA6AC40020BCAD /* AppDelegate.swift */; };
 		CE95EDCB22AA6AC40020BCAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDCA22AA6AC40020BCAD /* SceneDelegate.swift */; };
-		CE95EDCD22AA6AC40020BCAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDCC22AA6AC40020BCAD /* ViewController.swift */; };
+		CE95EDCD22AA6AC40020BCAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDCC22AA6AC40020BCAD /* MainViewController.swift */; };
 		CE95EDD022AA6AC40020BCAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95EDCE22AA6AC40020BCAD /* Main.storyboard */; };
 		CE95EDD322AA6AC40020BCAD /* BlogIdeaList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDD122AA6AC40020BCAD /* BlogIdeaList.xcdatamodeld */; };
 		CE95EDD522AA6AC40020BCAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95EDD422AA6AC40020BCAD /* Assets.xcassets */; };
 		CE95EDD822AA6AC40020BCAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95EDD622AA6AC40020BCAD /* LaunchScreen.storyboard */; };
+		CE95EDE222AA6AF00020BCAD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95EDE122AA6AF00020BCAD /* CloudKit.framework */; };
+		CE95EDE422AA714E0020BCAD /* BlogIdeaEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDE322AA714E0020BCAD /* BlogIdeaEditorViewController.swift */; };
+		CE95EDE822AA73180020BCAD /* BlogIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDE622AA73180020BCAD /* BlogIdea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE95EDC522AA6AC40020BCAD /* BlogIdeaList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogIdeaList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE95EDC822AA6AC40020BCAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE95EDCA22AA6AC40020BCAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE95EDCC22AA6AC40020BCAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE95EDCC22AA6AC40020BCAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE95EDCF22AA6AC40020BCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE95EDD222AA6AC40020BCAD /* BlogIdeaList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlogIdeaList.xcdatamodel; sourceTree = "<group>"; };
 		CE95EDD422AA6AC40020BCAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE95EDD722AA6AC40020BCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE95EDD922AA6AC40020BCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE95EDDF22AA6AEB0020BCAD /* BlogIdeaList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlogIdeaList.entitlements; sourceTree = "<group>"; };
+		CE95EDE122AA6AF00020BCAD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CE95EDE322AA714E0020BCAD /* BlogIdeaEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogIdeaEditorViewController.swift; sourceTree = "<group>"; };
+		CE95EDE622AA73180020BCAD /* BlogIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogIdea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE95EDE222AA6AF00020BCAD /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,7 @@
 			children = (
 				CE95EDC722AA6AC40020BCAD /* BlogIdeaList */,
 				CE95EDC622AA6AC40020BCAD /* Products */,
+				CE95EDE022AA6AF00020BCAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +67,12 @@
 		CE95EDC722AA6AC40020BCAD /* BlogIdeaList */ = {
 			isa = PBXGroup;
 			children = (
+				CE95EDDF22AA6AEB0020BCAD /* BlogIdeaList.entitlements */,
 				CE95EDC822AA6AC40020BCAD /* AppDelegate.swift */,
 				CE95EDCA22AA6AC40020BCAD /* SceneDelegate.swift */,
-				CE95EDCC22AA6AC40020BCAD /* ViewController.swift */,
+				CE95EDCC22AA6AC40020BCAD /* MainViewController.swift */,
+				CE95EDE322AA714E0020BCAD /* BlogIdeaEditorViewController.swift */,
+				CE95EDE622AA73180020BCAD /* BlogIdea.swift */,
 				CE95EDCE22AA6AC40020BCAD /* Main.storyboard */,
 				CE95EDD422AA6AC40020BCAD /* Assets.xcassets */,
 				CE95EDD622AA6AC40020BCAD /* LaunchScreen.storyboard */,
@@ -68,6 +80,14 @@
 				CE95EDD122AA6AC40020BCAD /* BlogIdeaList.xcdatamodeld */,
 			);
 			path = BlogIdeaList;
+			sourceTree = "<group>";
+		};
+		CE95EDE022AA6AF00020BCAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE95EDE122AA6AF00020BCAD /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE95EDD322AA6AC40020BCAD /* BlogIdeaList.xcdatamodeld in Sources */,
-				CE95EDCD22AA6AC40020BCAD /* ViewController.swift in Sources */,
+				CE95EDCD22AA6AC40020BCAD /* MainViewController.swift in Sources */,
+				CE95EDE822AA73180020BCAD /* BlogIdea.swift in Sources */,
+				CE95EDE422AA714E0020BCAD /* BlogIdeaEditorViewController.swift in Sources */,
 				CE95EDC922AA6AC40020BCAD /* AppDelegate.swift in Sources */,
 				CE95EDCB22AA6AC40020BCAD /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogIdeaList/BlogIdeaList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3534V3UJNS;
 				INFOPLIST_FILE = BlogIdeaList/Info.plist;
@@ -306,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogIdeaList/BlogIdeaList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3534V3UJNS;
 				INFOPLIST_FILE = BlogIdeaList/Info.plist;
