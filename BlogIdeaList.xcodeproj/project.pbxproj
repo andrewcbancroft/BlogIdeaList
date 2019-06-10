@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE5CE6F922AE593800D4EFA2 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE95EDD122AA6AC40020BCAD /* BlogIdeaList.xcdatamodeld */,
+				CE95EDE622AA73180020BCAD /* BlogIdea.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		CE95EDBC22AA6AC40020BCAD = {
 			isa = PBXGroup;
 			children = (
@@ -67,17 +76,16 @@
 		CE95EDC722AA6AC40020BCAD /* BlogIdeaList */ = {
 			isa = PBXGroup;
 			children = (
+				CE5CE6F922AE593800D4EFA2 /* Core Data */,
 				CE95EDDF22AA6AEB0020BCAD /* BlogIdeaList.entitlements */,
 				CE95EDC822AA6AC40020BCAD /* AppDelegate.swift */,
 				CE95EDCA22AA6AC40020BCAD /* SceneDelegate.swift */,
 				CE95EDCC22AA6AC40020BCAD /* MainViewController.swift */,
 				CE95EDE322AA714E0020BCAD /* BlogIdeaEditorViewController.swift */,
-				CE95EDE622AA73180020BCAD /* BlogIdea.swift */,
 				CE95EDCE22AA6AC40020BCAD /* Main.storyboard */,
 				CE95EDD422AA6AC40020BCAD /* Assets.xcassets */,
 				CE95EDD622AA6AC40020BCAD /* LaunchScreen.storyboard */,
 				CE95EDD922AA6AC40020BCAD /* Info.plist */,
-				CE95EDD122AA6AC40020BCAD /* BlogIdeaList.xcdatamodeld */,
 			);
 			path = BlogIdeaList;
 			sourceTree = "<group>";
