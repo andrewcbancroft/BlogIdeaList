@@ -17,6 +17,7 @@
 		CE95EDE222AA6AF00020BCAD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE95EDE122AA6AF00020BCAD /* CloudKit.framework */; };
 		CE95EDE422AA714E0020BCAD /* BlogIdeaEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDE322AA714E0020BCAD /* BlogIdeaEditorViewController.swift */; };
 		CE95EDE822AA73180020BCAD /* BlogIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95EDE622AA73180020BCAD /* BlogIdea.swift */; };
+		CEE5073F22AFC80700F0F221 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CEE5073E22AFC80700F0F221 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CE95EDE122AA6AF00020BCAD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		CE95EDE322AA714E0020BCAD /* BlogIdeaEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogIdeaEditorViewController.swift; sourceTree = "<group>"; };
 		CE95EDE622AA73180020BCAD /* BlogIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogIdea.swift; sourceTree = "<group>"; };
+		CEE5073E22AFC80700F0F221 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		CE95EDBC22AA6AC40020BCAD = {
 			isa = PBXGroup;
 			children = (
+				CEE5073E22AFC80700F0F221 /* README.md */,
 				CE95EDC722AA6AC40020BCAD /* BlogIdeaList */,
 				CE95EDC622AA6AC40020BCAD /* Products */,
 				CE95EDE022AA6AF00020BCAD /* Frameworks */,
@@ -158,6 +161,7 @@
 			files = (
 				CE95EDD822AA6AC40020BCAD /* LaunchScreen.storyboard in Resources */,
 				CE95EDD522AA6AC40020BCAD /* Assets.xcassets in Resources */,
+				CEE5073F22AFC80700F0F221 /* README.md in Resources */,
 				CE95EDD022AA6AC40020BCAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
