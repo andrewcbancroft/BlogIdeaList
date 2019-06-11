@@ -17,6 +17,7 @@ class BlogIdeaEditorViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     
+    // MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +26,7 @@ class BlogIdeaEditorViewController: UIViewController {
         self.setUIValues()
     }
     
+    // MARK: - Set UI
     func setUIValues() {
         guard let blogIdea = self.blogIdea else { return }
         
@@ -32,6 +34,7 @@ class BlogIdeaEditorViewController: UIViewController {
         self.descriptionTextField.text = blogIdea.ideaDescription
     }
     
+    // MARK: - Save
      // In a storyboard-based application, you will often want to do a little preparation before navigation
     @IBAction func saveButtonTapped(_ sender: Any) {
         if self.blogIdea == nil {

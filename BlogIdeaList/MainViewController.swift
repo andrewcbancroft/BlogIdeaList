@@ -16,6 +16,7 @@ class MainViewController: UIViewController, NSFetchedResultsControllerDelegate, 
     @IBOutlet weak var tableView: UITableView!
     var fetchedResultsController: NSFetchedResultsController<BlogIdea>!
 
+    // MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -85,6 +86,7 @@ class MainViewController: UIViewController, NSFetchedResultsControllerDelegate, 
         }
     }
     
+    // MARK: Delete Confirmation and Handling
     var blogIdeaToDelete: BlogIdea?
     
     func confirmDeleteForBlogIdea(_ blogIdea: BlogIdea) {
