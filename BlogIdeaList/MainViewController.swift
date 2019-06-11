@@ -86,6 +86,10 @@ class MainViewController: UIViewController, NSFetchedResultsControllerDelegate, 
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     // MARK: Delete Confirmation and Handling
     var blogIdeaToDelete: BlogIdea?
     
