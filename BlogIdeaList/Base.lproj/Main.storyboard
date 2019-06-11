@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Blog Ideas-->
         <scene sceneID="UJK-gp-iky">
             <objects>
                 <viewController id="uCE-q3-KQz" customClass="MainViewController" customModule="BlogIdeaList" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="37l-nd-uHN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="5GQ-Ud-xEN" detailTextLabel="nTm-xw-KZx" style="IBUITableViewCellStyleSubtitle" id="xIa-b9-zjJ">
@@ -59,14 +59,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="37l-nd-uHN" firstAttribute="centerY" secondItem="S5R-Bd-QsG" secondAttribute="centerY" id="1FU-wS-sMS"/>
-                            <constraint firstItem="37l-nd-uHN" firstAttribute="top" secondItem="S5R-Bd-QsG" secondAttribute="topMargin" constant="-88" id="BSD-vP-4Pu"/>
+                            <constraint firstItem="37l-nd-uHN" firstAttribute="centerY" secondItem="S5R-Bd-QsG" secondAttribute="centerY" constant="44" id="1FU-wS-sMS"/>
+                            <constraint firstItem="37l-nd-uHN" firstAttribute="top" secondItem="S5R-Bd-QsG" secondAttribute="topMargin" id="BSD-vP-4Pu"/>
                             <constraint firstItem="37l-nd-uHN" firstAttribute="centerX" secondItem="S5R-Bd-QsG" secondAttribute="centerX" id="XF7-cm-3JP"/>
                             <constraint firstItem="37l-nd-uHN" firstAttribute="leading" secondItem="Bx6-AV-f0U" secondAttribute="leading" id="xxD-pm-zsi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bx6-AV-f0U"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RJn-cd-JF2">
+                    <navigationItem key="navigationItem" title="Blog Ideas" id="RJn-cd-JF2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="c23-S4-3dd">
                             <connections>
                                 <segue destination="sd0-dF-iqG" kind="show" identifier="AnimalEditorSegue" id="hwG-uB-kEZ"/>
