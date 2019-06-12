@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,7 +22,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigationController = self.window?.rootViewController as! UINavigationController
         let mainVC = navigationController.viewControllers[0] as! MainViewController
-        mainVC.managedObjectContext = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        
+        let viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        viewContext.automaticallyMergesChangesFromParent = true
+
+        mainVC.managedObjectContext = viewContext
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
