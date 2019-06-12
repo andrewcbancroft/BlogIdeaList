@@ -10,5 +10,5 @@ This sample code project is associated [Getting Started With NSPersistentCloudKi
 
 Before you run the sample code project in Xcode:
 
-1. Set your bundle identifier. In the project settings, under General, in the Identity section, set the Bundle Identifier to your reverse domain name followed by the project name.  
+1. Set your bundle identifier. In the project settings, under General, in the Identity section, set the Bundle Identifier to **your** reverse domain name followed by the project name.  
 2. Set your development team. In the project settings, under Signing & Capabilities, select your development team from the dropdown list.
